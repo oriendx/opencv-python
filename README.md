@@ -1,2 +1,2 @@
 # opencv-python
-study note and resources
+My study notes and resources for opencv

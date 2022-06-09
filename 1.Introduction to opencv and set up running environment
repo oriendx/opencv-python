@@ -77,5 +77,3 @@ In [3]: cv2.__version__
 Out[3]: '3.4.1'
 
 The environment is set up successfully, exit with exit()
-*** Translated with www.DeepL.com/Translator (free version) ***
-

@@ -1,11 +1,11 @@
 What is opencv
-OpenCV is a computer vision library developed by Intel. It consists of a set of C functions and a small number of C++ classes.
+OpenCV is a computer vision library developed by Intel. It consists of a set of C and C++ functions.
 It implements many common algorithms for image processing and computer vision.
-It is open source, cross-platform and faster than matlab
-Of course, matlab provides an interface to opencv
+comparing to matlab, it is open source, cross-platform and faster
+Note that matlab provides an interface for opencv
 https://ww2.mathworks.cn/matlabcentral/fileexchange/47953-computer-vision-toolbox-interface-for-opencv-in-matlab
 
-Environment configuration (python)
+Environment configuration (pycharm)
 opencv provides a native version of c++ and a supported version of python, see this article
 https://blog.csdn.net/zhuwei0710/article/details/69802995
 to see the differences
@@ -13,6 +13,7 @@ to see the differences
 Create a new computer vision virtual environment
 conda create -n env-name python=xx
 where name is the environment name and xx refers to the python version. To use a specific version of opencv, python 3.6 should be installed
+
 
 ## Package Plan ##
 environment location: E:\anaconda\envs\env-opencv_study
@@ -26,6 +27,7 @@ done
 # To deactivate an active environment, use
 #
 # $ conda deactivate
+
 
 At this point you can also view the newly created virtual environment with conda info -e
 
@@ -77,3 +79,28 @@ In [3]: cv2.__version__
 Out[3]: '3.4.1'
 
 The environment is set up successfully, exit with exit()
+test if jupyter is usable:
+
+#(base) E:\anaconda\envs\env-opencv_study\jupyter notebook Call up jupyter with scripts as the root directory
+#(base) E:\anaconda\envs\env-opencv_study\Scripts> cd . /...
+#New folder and notebook
+#import the opencv package, the command opencv is called cv2
+import cv2
+#error,  presumably because jupyter is calling the default Python interpreter
+#Solution
+#Install the plugin nb_conda to allow self-selection of virtual environments
+#E:\anaconda>conda install nb_conda
+#This will allow the selecting of opencv environments 
+
+#Create a window
+#cv2.nameWindow('window',cv2.WINDOW_AUTOSIZE)
+#cv2.WINDOW_AUTOSIZE does not allow modification of the window size
+cv2.namedWindow('window',cv2.WINDOW_NORMAL)
+#Change the size of the outgoing window
+cv2.resizeWindow('window',600,800)
+#Show the window with the name windwo
+cv2.imshow('window',0)
+#Window won't load, switch to pycharm(f**k)
+
+#Set up the interpreter
+#Pycharm "Files "settings "Project Interpreter "ana existing enviorment "conda\envs\env-opencv_study\python.exe

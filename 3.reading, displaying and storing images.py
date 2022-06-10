@@ -89,7 +89,7 @@ def save_to_desktop(name, img)
 import cv2
 from utilities import save_to_desktop
 %run utilities.py
-tiger = cv2.imread('E:\\\LiamKyo\\\TIGERS\\\national parks\\\\tadoba\\\\matkasur\\\\matkasur.jpg')
+tiger = cv2.imread('E:\\matkasur.jpg')
 save_to_desktop('tiger', tiger)
 # The various indent errors are caused by indentation errors
 

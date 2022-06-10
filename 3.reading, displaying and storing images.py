@@ -75,7 +75,7 @@ def save_to_desktop(name, img)
       if key == ord('q'):
         break
       elif key == ord('s'):
-        path = "C:/Users/24599/Desktop"
+        path = "C:/Users/Desktop"
         # use os.path.join to stitch paths
         cv2.imwrite(os.path.join(path , 'savetest.jpg'), img)
        else:

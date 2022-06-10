@@ -91,6 +91,6 @@ from utilities import save_to_desktop
 %run utilities.py
 tiger = cv2.imread('E:\\matkasur.jpg')
 save_to_desktop('tiger', tiger)
-# The various indent errors are caused by indentation errors
+# The various indent errors are caused by inappropriate indentations 
 
 

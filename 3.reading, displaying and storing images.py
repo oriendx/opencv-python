@@ -7,7 +7,7 @@ import matplotlib.image as mping
 # The path format is double backslash \\ or single slash /, which can be read directly in the current directory
 # Color image without flags
 # jpg images are read as uint8 (8-bit binary numbers without plus or minus, numbers 0-255)
-tiger = cv2.imread('E:\\\LiamKyo\\\\TIGERS\\\national parks\\\\tadoba\\\\matkasur\\\\matkasur.jpg')
+tiger = cv2.imread('E:\\matkasur.jpg')
 plt.imshow(tiger1)
 # The maximum element of the matrixed image is 255
 tiger.max()
@@ -50,7 +50,7 @@ import os
 cv2.namedWindow('img', cv2.WINDOW_NORMAL)
 cv2.resizeWindow('img', 640, 480)
 
-img = cv2.imread('E:\\\LiamKyo\\\TIGERS\\\national parks\\\\tadoba\\\\matkasur\\\\matkasur.jpg')
+img = cv2.imread('E:\\matkasur.jpg')
 
 while True:
     cv2.imshow('img',img)

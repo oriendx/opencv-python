@@ -1,4 +1,4 @@
-# Colour
+#Colour
 #opencv's colour space
 #hsv, hsl, yuv, etc.
 
@@ -12,11 +12,11 @@
 #l luminance (controls the amount of black and white blended in)
 
 #yuv.
-#y less bandwidth used, colour coding of video, used in TV programmes
+#colour encoding formatfor videos, use little bandwidth, used in TV programmes
 #y luminance, also known as grey scale value
 #uv chroma
 #sampling rate 4:4:4 fully sampled
-#See int309 and int302 lessons
+#See int309 and int302 for details
 
 #check the number of different colours in a picture
 import cv2
